@@ -828,24 +828,165 @@
     .foot-tagline{text-align:left}
   }
   @media (max-width:540px){
-    .container{padding:0 20px}
-    .nav .inner{padding:14px 20px}
-    .moods{grid-template-columns:1fr 1fr}
-    .mood{padding:22px 18px;min-height:150px}
-    .mood .mlabel{font-size:18px}
-    .weather-strip{flex-wrap:wrap;gap:14px}
-    .weather-strip .w-temps{gap:18px;width:100%;justify-content:flex-end}
-    .weather-strip .w-temp-val{font-size:32px}
-    .mtab{padding:14px 14px;font-size:10px;flex:1 1 auto;min-width:0;border-right-width:1px}
+    .container{padding:0 18px}
+    .nav{backdrop-filter:blur(10px)}
+    .nav .inner{padding:12px 18px}
+    .nav .logo{font-size:18px}
+    .status{padding:5px 10px;font-size:10px}
+    .status #statusText{font-size:10px}
+
+    /* Hero — 작고 가볍게 */
+    header{min-height:auto;padding:80px 0 40px}
+    .hero-content{padding:0 18px 36px}
+    .hero-content h1{font-size:42px;line-height:1.05;margin:14px 0}
+    .eyebrow{font-size:10.5px;gap:8px;letter-spacing:.22em}
+    .eyebrow::before{width:24px}
+    .hero-content p{font-size:13.5px;line-height:1.6;margin-top:14px}
+    .hero-ctas{margin-top:24px;gap:8px;flex-wrap:wrap}
+    .hero-ctas .btn{padding:11px 18px;font-size:10px;letter-spacing:.18em}
+    .hero-pager{bottom:14px;right:14px}
+    .hero-pager .lab{font-size:9px}
+    .scroll-hint{display:none}
+    .hero-bean{display:none}
+
+    /* Section head */
+    section.block{padding:48px 0}
+    .section-head{margin-bottom:28px;gap:12px;flex-direction:column;align-items:flex-start}
+    .section-head h2{font-size:30px;line-height:1.15}
+    .section-head .desc{font-size:13.5px;line-height:1.55;max-width:none}
+    .section-head .kicker{font-size:10px;gap:8px}
+    .section-head .kicker .num{padding:2px 7px;font-size:10px}
+
+    /* Pillars (Story) */
+    .pillar{padding:30px 24px}
+    .pillar h3{font-size:24px;line-height:1.2}
+    .pillar p{font-size:13.5px;line-height:1.7}
+    .pnum{font-size:9.5px}
+
+    /* Today's Pick */
+    .moods{grid-template-columns:repeat(2, 1fr);gap:8px}
+    .mood{padding:18px 14px;min-height:120px}
+    .mood .mlabel{font-size:15px;line-height:1.2}
+    .mood .memoji{font-size:30px}
+    .weather-strip{flex-wrap:wrap;gap:10px;padding:18px 18px}
+    .weather-strip .w-num{font-size:9px}
+    .weather-strip .w-icon{font-size:34px}
+    .weather-strip .w-body b{font-size:15px}
+    .weather-strip .w-body span{font-size:11.5px}
+    .weather-strip .w-temps{gap:14px;width:100%;justify-content:flex-end}
+    .weather-strip .w-temp-val{font-size:26px}
+    .weather-strip .w-temp-label{font-size:9px}
+    .result-side{padding:22px 18px}
+    .result-side h3{font-size:18px}
+    .result-msg{font-size:13.5px}
+    .pickcard{padding:18px 16px}
+    .pickcard .pname{font-size:17px}
+    .pickcard .pwhy{font-size:13px}
+
+    /* Menu */
     .menu-tabs{display:grid;grid-template-columns:repeat(2,1fr)}
+    .mtab{padding:12px 10px;font-size:10px;flex:1 1 auto;min-width:0;border-right-width:1px;letter-spacing:.16em}
     .mtab:nth-child(2n){border-right:none}
     .mtab{border-bottom:1px solid var(--ink)}
     .mtab:nth-last-child(-n+2){border-bottom:none}
-    .mitem{padding:18px 20px}
-    .mitem .mname b{font-size:17px}
-    .visit-cell{padding:32px 22px}
-    .notice-card li{flex-direction:column;gap:6px}
-    .notice-card li .lnum{padding-top:0}
+    .mitem{padding:14px 16px;gap:10px}
+    .mitem .mname b{font-size:15px}
+    .mitem .mname span{font-size:10.5px}
+    .mitem .mdots{display:none}
+    .mitem .mprice{font-size:12.5px;white-space:nowrap}
+
+    /* Notice */
+    .notice-wrap{padding:48px 0}
+    .notice-card{padding:24px 22px;gap:14px}
+    .notice-card h3{font-size:24px}
+    .notice-card .nkicker{font-size:10px}
+    .notice-card li{flex-direction:column;gap:4px}
+    .notice-card li .lnum{padding-top:0;font-size:10px}
+    .notice-card li b{font-size:15px}
+    .notice-card li p{font-size:12.5px;line-height:1.6}
+
+    /* Visit */
+    .visit-cell{padding:24px 22px}
+    .visit-cell h3{font-size:10px}
+    .visit-cell .address{font-size:22px}
+    .visit-cell .address-sub{font-size:12px}
+    .vchip{padding:10px 16px;font-size:10px;letter-spacing:.18em}
+    .hrow .hd{font-size:11px}
+    .hrow .ht{font-size:15px}
+
+    /* Voice section */
+    .voice{padding:48px 0}
+    .voice-coupon{padding:20px 18px;gap:12px}
+    .voice-coupon .vc-tag{font-size:10px;letter-spacing:.22em}
+    .voice-coupon .vc-msg{font-size:18px;line-height:1.4}
+    .voice-coupon .vc-sub{font-size:10px;letter-spacing:.12em}
+    .voice-coupon .vc-price{padding:12px 16px;min-width:100px}
+    .voice-coupon .vc-price .pcup{font-size:32px}
+
+    .voice-form{padding:24px 18px;gap:18px}
+    .vpart-tag{font-size:10px;letter-spacing:.18em}
+    .vpart-title{font-size:22px;line-height:1.3}
+    .vlabel{font-size:10px;letter-spacing:.18em}
+    .voice-form input[type="text"], .voice-form textarea{font-size:14px;padding:10px 0}
+    .voice-form textarea{min-height:90px}
+    .stars label{font-size:28px}
+    .chips-radio label, .chips-check label{padding:8px 12px;font-size:11.5px}
+    details.vpart-optional summary{flex-direction:column;align-items:flex-start;gap:6px}
+    details.vpart-optional .vpart-title-sm{font-size:14px}
+    details.vpart-optional .vpart-toggle{font-size:10px}
+    .vnote{font-size:11px;line-height:1.7}
+    .vsubmit{padding:14px 24px;font-size:10px;letter-spacing:.18em}
+    .vrow{grid-template-columns:1fr;gap:18px}
+
+    /* Voice thanks */
+    .voice-thanks{padding:40px 22px}
+    .voice-thanks h3{font-size:24px}
+    .voice-thanks p{font-size:13px;line-height:1.7}
+
+    /* Popup */
+    .popup-mask{padding:14px}
+    .popup-card{padding:30px 22px 22px}
+    .popup-card h3{font-size:22px;line-height:1.3}
+    .popup-card p{font-size:13.5px;line-height:1.7}
+    .popup-tag{font-size:10px}
+    .popup-go{padding:13px 18px;font-size:10px}
+    .popup-later{font-size:10px}
+    .popup-thanks .thanks-icon{font-size:38px}
+
+    /* FAB */
+    .fab{bottom:14px;right:14px;padding:10px 14px 10px 12px;font-size:11px;gap:8px}
+    .fab .fab-emoji{font-size:16px}
+    .fab.fab-match{bottom:64px}
+
+    /* Footer */
+    footer{padding:48px 0 28px}
+    .foot-logo{font-size:64px;line-height:.92;letter-spacing:-.03em}
+    .foot-tagline{font-size:14px;text-align:left;max-width:none;margin-top:14px}
+    .foot-credit{padding:22px 0;gap:16px;margin-bottom:22px}
+    .foot-credit .fc-tag{font-size:10px}
+    .foot-credit .fc-body{font-size:14px;line-height:1.65}
+    .foot-credit .fc-meta{font-size:10px;text-align:left}
+    .foot-bottom{flex-direction:column;align-items:flex-start;gap:8px;padding-top:18px;font-size:10px}
+    .foot-contact{font-size:9.5px;text-align:left;margin-top:14px}
+  }
+
+  /* 작은 폰 (380px 이하) */
+  @media (max-width:380px){
+    .container{padding:0 14px}
+    .hero-content h1{font-size:36px}
+    .hero-content p{font-size:13px}
+    .section-head h2{font-size:26px}
+    .pillar h3{font-size:22px}
+    .moods .mood{padding:16px 12px;min-height:108px}
+    .mood .mlabel{font-size:14px}
+    .mood .memoji{font-size:26px}
+    .visit-cell .address{font-size:20px}
+    .voice-coupon .vc-msg{font-size:16.5px}
+    .voice-form{padding:20px 16px}
+    .foot-logo{font-size:54px}
+    .fab .fab-txt{display:none}
+    .fab{padding:12px;border-radius:50%;width:48px;height:48px;justify-content:center}
+    .fab .fab-emoji{font-size:20px}
   }
 
   /* ---------- Reveal animation ---------- */
