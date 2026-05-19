@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Cafe Suzak — Owner Cardnews (1080×1080)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..900,0..100,0..1&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  @font-face{font-family:'Gmarket Sans';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');font-weight:300;font-display:swap}
+  @font-face{font-family:'Gmarket Sans';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');font-weight:500;font-display:swap}
+  @font-face{font-family:'Gmarket Sans';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');font-weight:700;font-display:swap}
+
+  :root{
+    --bg:#FAFAF7;--ink:#0a0a0a;--ink-2:#3a3a3a;--ink-3:#888888;
+    --line:#1a1a1a;--line-soft:#dcdcd6;--rose:#C8344F;
+    --serif:"Fraunces",ui-serif,Georgia,serif;
+    --sans:"Gmarket Sans","Pretendard","Apple SD Gothic Neo",sans-serif;
+    --mono:"DM Mono",monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:#1a1a1a;color:var(--ink);font-family:var(--sans);font-weight:300;
+    padding:60px 40px;-webkit-font-smoothing:antialiased;
+    word-break:keep-all;overflow-wrap:break-word;
+  }
+  h1,h2,h3,p,span,div,b,em,i{word-break:keep-all;overflow-wrap:break-word}
+
+  .guide{max-width:1080px;margin:0 auto 60px;background:#2a2a2a;color:#eee;padding:32px 40px;border:1px solid #444;border-radius:8px}
+  .guide h2{font-family:var(--serif);font-weight:400;font-size:28px;margin-bottom:14px;color:#fff}
+  .guide p{font-family:var(--sans);font-size:14px;line-height:1.7;color:#bbb;margin-bottom:10px}
+  .guide ol{padding-left:22px;font-family:var(--sans);font-size:14px;line-height:1.9;color:#ddd}
+  .guide b{color:#fff;font-weight:500}
+  .guide code{background:#444;padding:2px 8px;border-radius:3px;font-family:var(--mono);font-size:13px;color:#eee}
+
+  .slide-wrap{max-width:1080px;margin:0 auto 60px;box-shadow:0 20px 60px rgba(0,0,0,.4)}
+  .slide-no{background:#2a2a2a;color:#eee;padding:14px 28px;font-family:var(--mono);font-size:13px;letter-spacing:.24em;text-transform:uppercase;display:flex;justify-content:space-between;align-items:center}
+  .slide-no b{color:#fff;font-weight:500}
+  .slide-no .save-hint{color:#777;font-size:11px}
+
+  .slide{width:1080px;height:1080px;background:var(--bg);position:relative;overflow:hidden;display:flex;flex-direction:column;color:var(--ink)}
+
+  .masthead{border-bottom:1px solid var(--line);padding:26px 56px;display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:11px;letter-spacing:.32em;text-transform:uppercase;font-weight:500;color:var(--ink)}
+  .masthead .ml{display:flex;align-items:center;gap:12px}
+  .masthead .dot{display:inline-block;width:6px;height:6px;background:var(--rose);border-radius:50%}
+  .masthead .mr{color:var(--ink-3);letter-spacing:.32em}
+
+  .pagefoot{border-top:1px solid var(--line);padding:22px 56px;display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:11px;letter-spacing:.3em;text-transform:uppercase;font-weight:500;color:var(--ink-3)}
+  .pagefoot .pl{color:var(--ink);font-weight:700}
+  .pagefoot .pr{color:var(--rose);font-weight:700}
+
+  .body{flex:1;display:flex;flex-direction:column;justify-content:center;padding:60px 56px;position:relative}
+
+  /* Slide 1 · COVER */
+  .s1 .body{justify-content:center;text-align:left}
+  .s1-kicker{font-family:var(--mono);font-size:13px;letter-spacing:.34em;text-transform:uppercase;color:var(--rose);font-weight:700;margin-bottom:28px}
+  .s1 h1{font-family:var(--serif);font-weight:700;font-size:200px;line-height:.9;letter-spacing:-.05em;color:var(--ink);font-variation-settings:"SOFT" 0,"WONK" 0,"opsz" 144}
+  .s1 h1 em{font-style:italic;font-weight:400;color:var(--rose);font-variation-settings:"SOFT" 100,"WONK" 1,"opsz" 144}
+  .s1-sub{font-family:var(--serif);font-weight:400;font-size:36px;line-height:1.25;letter-spacing:-.02em;color:var(--ink);margin-top:30px}
+  .s1-sub em{font-style:italic;color:var(--rose);font-variation-settings:"SOFT" 100,"WONK" 1,"opsz" 144}
+  .s1-lead{font-family:var(--sans);font-size:16px;line-height:1.7;color:var(--ink-2);font-weight:400;margin-top:24px;max-width:620px}
+
+  /* Slide 2 · ABOUT 카페수작 */
+  .s2-tag{font-family:var(--mono);font-size:13px;letter-spacing:.34em;text-transform:uppercase;color:var(--rose);font-weight:700;margin-bottom:20px}
+  .s2 h2{font-family:var(--serif);font-weight:400;font-size:80px;line-height:1.05;letter-spacing:-.025em;color:var(--ink);margin-bottom:36px}
+  .s2 h2 em{font-style:italic;color:var(--rose);font-variation-settings:"SOFT" 100,"WONK" 1,"opsz" 144}
+  .s2-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--line);margin-top:12px}
+  .s2-cell{padding:28px 24px;border-right:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft)}
+  .s2-cell:nth-child(2n){border-right:none}
+  .s2-cell:nth-last-child(-n+2){border-bottom:none}
+  .s2-cell-num{font-family:var(--mono);font-size:11px;letter-spacing:.28em;color:var(--rose);text-transform:uppercase;font-weight:700;margin-bottom:10px}
+  .s2-cell-title{font-family:var(--serif);font-weight:500;font-size:24px;color:var(--ink);line-height:1.2;letter-spacing:-.01em;margin-bottom:6px}
+  .s2-cell-desc{font-family:var(--sans);font-size:14px;line-height:1.65;color:var(--ink-2);font-weight:400}
+
+  /* Slide 3 · WHY (Dark) */
+  .s3{background:var(--ink);color:var(--bg)}
+  .s3 .masthead{color:var(--bg);border-bottom-color:#333}
+  .s3 .masthead .mr{color:#666}
+  .s3 .pagefoot{color:#666;border-top-color:#333}
+  .s3 .pagefoot .pl{color:var(--bg)}
+  .s3 .pagefoot .pr{color:var(--rose)}
+  .s3 .body{justify-content:center;text-align:center;align-items:center}
+  .s3-tag{font-family:var(--mono);font-size:13px;letter-spacing:.34em;text-transform:uppercase;color:var(--rose);font-weight:700;margin-bottom:24px}
+  .s3-mark{font-family:var(--serif);font-weight:700;font-size:120px;line-height:.4;color:var(--rose);margin-bottom:14px;font-variation-settings:"SOFT" 100,"WONK" 1,"opsz" 144}
+  .s3 h2{font-family:var(--serif);font-style:italic;font-weight:400;font-size:64px;line-height:1.25;letter-spacing:-.02em;color:var(--bg);max-width:880px;font-variation-settings:"SOFT" 100,"WONK" 1,"opsz" 144}
+  .s3 h2 em{color:var(--rose);font-style:italic}
+  .s3-cite{font-family:var(--mono);font-size:12px;letter-spacing:.34em;text-transform:uppercase;color:#999;font-weight:500;margin-top:36px}
+
+  /* Slide 4 · PAGE Features */
+  .s4-tag{font-family:var(--mono);font-size:13px;letter-spacing:.34em;text-transform:uppercase;color:var(--rose);font-weight:700;margin-bottom:20px}
+  .s4 h2{font-family:var(--serif);font-weight:400;font-size:72px;line-height:1.08;letter-spacing:-.025em;color:var(--ink);margin-bottom:36px}
+  .s4 h2 em{font-style:italic;color:var(--rose);font-variation-settings:"SOFT" 100,"WONK" 1,"opsz" 144}
+  .s4-list{display:flex;flex-direction:column}
+  .s4-item{display:grid;grid-template-columns:80px 1fr;gap:26px;align-items:flex-start;padding:22px 0;border-top:1px solid var(--line-soft)}
+  .s4-item:last-child{border-bottom:1px solid var(--line-soft)}
+  .s4-num{font-family:var(--serif);font-weight:700;font-size:38px;color:var(--rose);letter-spacing:-.02em;font-variation-settings:"SOFT" 100,"WONK" 1,"opsz" 144}
+  .s4-title{font-family:var(--serif);font-weight:500;font-size:28px;color:var(--ink);line-height:1.2;letter-spacing:-.015em;margin-bottom:4px}
+  .s4-desc{font-family:var(--sans);font-size:14px;line-height:1.65;color:var(--ink-2);font-weight:400}
+
+  /* Slide 5 · INFO 비교과 */
+  .s5-tag{font-family:var(--mono);font-size:13px;letter-spacing:.34em;text-transform:uppercase;color:var(--rose);font-weight:700;margin-bottom:20px}
+  .s5 h2{font-family:var(--serif);font-weight:400;font-size:64px;line-height:1.1;letter-spacing:-.025em;color:var(--ink);margin-bottom:32px}
+  .s5 h2 em{font-style:italic;color:var(--rose);font-variation-settings:"SOFT" 100,"WONK" 1,"opsz" 144}
+  .s5-info-box{background:var(--ink);color:var(--bg);padding:36px 36px;margin-bottom:24px}
+  .s5-info-label{font-family:var(--mono);font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--rose);font-weight:700;margin-bottom:14px}
+  .s5-info-name{font-family:var(--serif);font-weight:500;font-size:30px;line-height:1.3;color:var(--bg);letter-spacing:-.015em}
+  .s5-info-uni{font-family:var(--mono);font-size:14px;letter-spacing:.18em;color:#999;margin-top:10px;text-transform:uppercase}
+  .s5-purpose{font-family:var(--serif);font-size:21px;line-height:1.65;color:var(--ink);font-weight:400;padding:0 4px}
+  .s5-purpose b{color:var(--rose);font-weight:500}
+
+  /* Slide 6 · DRAW (Dark) */
+  .s6{background:var(--ink);color:var(--bg)}
+  .s6 .masthead{color:var(--bg);border-bottom-color:#333}
+  .s6 .masthead .mr{color:#666}
+  .s6 .pagefoot{color:#666;border-top-color:#333}
+  .s6 .pagefoot .pl{color:var(--bg)}
+  .s6-tag{font-family:var(--mono);font-size:13px;letter-spacing:.34em;text-transform:uppercase;color:var(--rose);font-weight:700;margin-bottom:20px}
+  .s6 h2{font-family:var(--serif);font-weight:400;font-size:78px;line-height:1.05;letter-spacing:-.025em;color:var(--bg);margin-bottom:40px}
+  .s6 h2 em{font-style:italic;color:var(--rose);font-variation-settings:"SOFT" 100,"WONK" 1,"opsz" 144}
+  .s6-prize{border:1px dashed var(--bg);padding:44px 38px;display:flex;justify-content:space-between;align-items:center;gap:24px;max-width:880px}
+  .s6-prize-tag{font-family:var(--mono);font-size:13px;letter-spacing:.32em;text-transform:uppercase;color:#999;font-weight:700;margin-bottom:12px}
+  .s6-prize-body{font-family:var(--serif);font-weight:400;font-size:28px;line-height:1.4;color:var(--bg)}
+  .s6-prize-body b{color:var(--rose);font-weight:500;font-style:italic;font-variation-settings:"SOFT" 100,"WONK" 1,"opsz" 144}
+  .s6-prize-icon{font-size:72px;line-height:1}
+
+  /* Slide 7 · CTA */
+  .s7-tag{font-family:var(--mono);font-size:13px;letter-spacing:.34em;text-transform:uppercase;color:var(--rose);font-weight:700;margin-bottom:24px}
+  .s7 h2{font-family:var(--serif);font-weight:400;font-size:64px;line-height:1.15;letter-spacing:-.025em;color:var(--ink);margin-bottom:36px}
+  .s7 h2 em{font-style:italic;color:var(--rose);font-variation-settings:"SOFT" 100,"WONK" 1,"opsz" 144}
+  .s7-url-box{background:var(--ink);color:var(--bg);padding:32px 34px;margin-bottom:20px}
+  .s7-url-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+  .s7-url-tag{font-family:var(--mono);font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--rose);font-weight:700}
+  .s7-url-arrow{font-family:var(--serif);font-weight:300;font-size:36px;line-height:1;color:var(--rose)}
+  .s7-url-line{font-family:var(--serif);font-weight:500;font-size:36px;letter-spacing:-.02em;color:var(--bg);line-height:1.1}
+  .s7-url-line em{font-style:italic;font-weight:400;color:var(--rose);font-variation-settings:"SOFT" 100,"WONK" 1,"opsz" 144}
+  .s7-meta{display:grid;grid-template-columns:1fr 1fr 1fr;gap:22px;padding-top:18px;border-top:1px solid var(--line-soft)}
+  .s7-meta-col{display:flex;flex-direction:column;gap:4px}
+  .s7-meta-label{font-family:var(--mono);font-size:10px;letter-spacing:.28em;color:var(--ink-3);text-transform:uppercase;font-weight:500}
+  .s7-meta-val{font-family:var(--sans);font-size:13px;line-height:1.5;color:var(--ink);font-weight:500}
+  .s7-meta-val a{color:var(--rose);text-decoration:none}
+</style>
+</head>
+<body>
+
+<div class="guide">
+  <h2>📸 사장님용 카드뉴스 · 캡쳐 가이드</h2>
+  <p>각 슬라이드 <b>1080×1080px</b>. 카페 인스타 본 계정용. 매칭/소개팅 내용 X — 비교과 프로그램 + 카페 소개 + 후기 추첨만.</p>
+  <ol>
+    <li>크롬에서 F12</li>
+    <li>슬라이드 위 <b>우클릭 → "Inspect"</b></li>
+    <li><code>.slide</code> 요소 <b>우클릭 → "Capture node screenshot"</b></li>
+    <li>1080×1080 PNG 자동 저장 → 7장 인스타 슬라이드 업로드</li>
+  </ol>
+</div>
+
+<!-- ============ S1 · COVER ============ -->
+<div class="slide-wrap">
+  <div class="slide-no"><b>SLIDE 01 · COVER</b><span class="save-hint">→ 우클릭 후 "Capture node screenshot"</span></div>
+  <div class="slide s1">
+    <div class="masthead">
+      <div class="ml">Cafe Suzak<span class="dot"></span>2026</div>
+      <div class="mr">Project · 학생 산학협력</div>
+    </div>
+    <div class="body">
+      <div class="s1-kicker">— Notice · 공지</div>
+      <h1>학생이<br/>만든 <em>페이지</em>.</h1>
+      <p class="s1-sub">고려대학교 세종캠퍼스 글로벌경영학과<br/><em>비교과 프로그램</em>의 일환으로 제작된 카페수작 홈페이지입니다.</p>
+      <p class="s1-lead">우리 카페에 다녀가신 분들을 위한 작은 디지털 자산 — 메뉴 추천, 영업 상태, 사용자 후기까지 한 페이지에.</p>
+    </div>
+    <div class="pagefoot">
+      <span class="pl">Cover</span>
+      <span>—</span>
+      <span class="pr">01 / 07</span>
+    </div>
+  </div>
+</div>
+
+<!-- ============ S2 · ABOUT 카페수작 ============ -->
+<div class="slide-wrap">
+  <div class="slide-no"><b>SLIDE 02 · ABOUT</b><span class="save-hint">→ 우클릭 후 "Capture node screenshot"</span></div>
+  <div class="slide s2">
+    <div class="masthead">
+      <div class="ml">Cafe Suzak<span class="dot"></span>2026</div>
+      <div class="mr">— Chapter 01</div>
+    </div>
+    <div class="body">
+      <div class="s2-tag">— About · 카페수작</div>
+      <h2>조치원의 작은<br/><em>로스터리 카페</em>.</h2>
+      <div class="s2-grid">
+        <div class="s2-cell">
+          <div class="s2-cell-num">— No. 01</div>
+          <div class="s2-cell-title">2012년부터 — 15년차</div>
+          <div class="s2-cell-desc">매일 매장에서 원두를 직접 로스팅하는 마스터.</div>
+        </div>
+        <div class="s2-cell">
+          <div class="s2-cell-num">— No. 02</div>
+          <div class="s2-cell-title">시럽·소스 100% 수제</div>
+          <div class="s2-cell-desc">자몽 시럽도, 콜라 시럽도 시판 안 써요.</div>
+        </div>
+        <div class="s2-cell">
+          <div class="s2-cell-num">— No. 03</div>
+          <div class="s2-cell-title">낮엔 카페, 밤엔 바</div>
+          <div class="s2-cell-desc">아메리카노부터 모히또까지. 22시까지 운영.</div>
+        </div>
+        <div class="s2-cell">
+          <div class="s2-cell-num">— No. 04</div>
+          <div class="s2-cell-title">학교 도보 10분</div>
+          <div class="s2-cell-desc">홍익대·고려대 세종캠 학생 단골 카페.</div>
+        </div>
+      </div>
+    </div>
+    <div class="pagefoot">
+      <span class="pl">About</span>
+      <span>—</span>
+      <span class="pr">02 / 07</span>
+    </div>
+  </div>
+</div>
+
+<!-- ============ S3 · WHY (DARK) ============ -->
+<div class="slide-wrap">
+  <div class="slide-no"><b>SLIDE 03 · WHY</b><span class="save-hint">→ 우클릭 후 "Capture node screenshot"</span></div>
+  <div class="slide s3">
+    <div class="masthead">
+      <div class="ml">Cafe Suzak<span class="dot"></span>2026</div>
+      <div class="mr">— Chapter 02</div>
+    </div>
+    <div class="body">
+      <div class="s3-tag">— Why this Page</div>
+      <div class="s3-mark">"</div>
+      <h2>오프라인의 정성을,<br/><em>온라인으로</em> 옮기는 일.</h2>
+      <p class="s3-cite">— 글로벌경영 비교과 프로그램</p>
+    </div>
+    <div class="pagefoot">
+      <span class="pl">Why</span>
+      <span>—</span>
+      <span class="pr">03 / 07</span>
+    </div>
+  </div>
+</div>
+
+<!-- ============ S4 · PAGE FEATURES ============ -->
+<div class="slide-wrap">
+  <div class="slide-no"><b>SLIDE 04 · PAGE</b><span class="save-hint">→ 우클릭 후 "Capture node screenshot"</span></div>
+  <div class="slide s4">
+    <div class="masthead">
+      <div class="ml">Cafe Suzak<span class="dot"></span>2026</div>
+      <div class="mr">— Chapter 03</div>
+    </div>
+    <div class="body">
+      <div class="s4-tag">— Page · 무엇이 있나요</div>
+      <h2>한 페이지 안에<br/><em>네 가지</em> 기능.</h2>
+      <div class="s4-list">
+        <div class="s4-item">
+          <div class="s4-num">01</div>
+          <div>
+            <div class="s4-title">기분 · 날씨별 메뉴 추천</div>
+            <div class="s4-desc">조치원 실시간 날씨 + 10가지 기분 → 카페수작 메뉴 3잔 자동 매칭.</div>
+          </div>
+        </div>
+        <div class="s4-item">
+          <div class="s4-num">02</div>
+          <div>
+            <div class="s4-title">실시간 영업 상태</div>
+            <div class="s4-desc">토요일 정기휴무 · 라스트오더 30분 전 안내까지 자동 표시.</div>
+          </div>
+        </div>
+        <div class="s4-item">
+          <div class="s4-num">03</div>
+          <div>
+            <div class="s4-title">전체 메뉴판 · 가격</div>
+            <div class="s4-desc">커피·콜드브루·티·디저트 전 카테고리 한눈에.</div>
+          </div>
+        </div>
+        <div class="s4-item">
+          <div class="s4-num">04</div>
+          <div>
+            <div class="s4-title">사용자 후기 + 추첨</div>
+            <div class="s4-desc">페이지 후기 남기시면 카페수작 음료 1잔 이용권 추첨 응모.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pagefoot">
+      <span class="pl">Page</span>
+      <span>—</span>
+      <span class="pr">04 / 07</span>
+    </div>
+  </div>
+</div>
+
+<!-- ============ S5 · INFO 비교과 ============ -->
+<div class="slide-wrap">
+  <div class="slide-no"><b>SLIDE 05 · PROGRAM</b><span class="save-hint">→ 우클릭 후 "Capture node screenshot"</span></div>
+  <div class="slide s5">
+    <div class="masthead">
+      <div class="ml">Cafe Suzak<span class="dot"></span>2026</div>
+      <div class="mr">— Chapter 04</div>
+    </div>
+    <div class="body">
+      <div class="s5-tag">— Program · 비교과 프로그램</div>
+      <h2>이 페이지는 <em>이렇게</em><br/>만들어졌어요.</h2>
+      <div class="s5-info-box">
+        <div class="s5-info-label">— 수업명</div>
+        <div class="s5-info-name">지역 영세기업 AI 콘텐츠<br/>마케팅 산학협력</div>
+        <div class="s5-info-uni">고려대학교 세종캠퍼스 · 글로벌경영학과</div>
+      </div>
+      <p class="s5-purpose">
+        지역의 작은 사업체와 학생이 함께 — 학생은 <b>실제 마케팅 자산</b>을 만들고, 지역 영세기업은 <b>디지털 채널</b>을 갖추는 산학협력 프로그램입니다.
+      </p>
+    </div>
+    <div class="pagefoot">
+      <span class="pl">Program</span>
+      <span>—</span>
+      <span class="pr">05 / 07</span>
+    </div>
+  </div>
+</div>
+
+<!-- ============ S6 · DRAW (DARK) ============ -->
+<div class="slide-wrap">
+  <div class="slide-no"><b>SLIDE 06 · DRAW</b><span class="save-hint">→ 우클릭 후 "Capture node screenshot"</span></div>
+  <div class="slide s6">
+    <div class="masthead">
+      <div class="ml">Cafe Suzak<span class="dot"></span>2026</div>
+      <div class="mr">— Lucky Draw</div>
+    </div>
+    <div class="body">
+      <div class="s6-tag">— Lucky Draw · 후기 이벤트</div>
+      <h2>한 줄 후기에,<br/>한 잔 <em>이용권</em>.</h2>
+      <div class="s6-prize">
+        <div>
+          <div class="s6-prize-tag">— Prize</div>
+          <div class="s6-prize-body">페이지에 후기 남겨주신 분들 중 추첨해<br/><b>카페수작 원하는 음료 1잔 이용권</b>을 드립니다.</div>
+        </div>
+        <div class="s6-prize-icon">☕</div>
+      </div>
+    </div>
+    <div class="pagefoot">
+      <span class="pl">Draw</span>
+      <span>—</span>
+      <span class="pr">06 / 07</span>
+    </div>
+  </div>
+</div>
+
+<!-- ============ S7 · VISIT (CTA) ============ -->
+<div class="slide-wrap">
+  <div class="slide-no"><b>SLIDE 07 · VISIT</b><span class="save-hint">→ 우클릭 후 "Capture node screenshot"</span></div>
+  <div class="slide s7">
+    <div class="masthead">
+      <div class="ml">Cafe Suzak<span class="dot"></span>2026</div>
+      <div class="mr">— Visit Now</div>
+    </div>
+    <div class="body">
+      <div class="s7-tag">— Visit · 페이지 보러가기</div>
+      <h2>지금, <em>한 잔의 수작</em>을<br/>골라보세요.</h2>
+      <div class="s7-url-box">
+        <div class="s7-url-head">
+          <span class="s7-url-tag">— Live URL</span>
+          <span class="s7-url-arrow">→</span>
+        </div>
+        <div class="s7-url-line">meet-at-suzak.vercel.app<em>/cafe</em></div>
+      </div>
+      <div class="s7-meta">
+        <div class="s7-meta-col">
+          <div class="s7-meta-label">— Instagram</div>
+          <div class="s7-meta-val">@cafe_suzak</div>
+        </div>
+        <div class="s7-meta-col">
+          <div class="s7-meta-label">— Address</div>
+          <div class="s7-meta-val">조치원 원마루길 28-1</div>
+        </div>
+        <div class="s7-meta-col">
+          <div class="s7-meta-label">— Contact</div>
+          <div class="s7-meta-val"><a href="mailto:bin12597@naver.com">bin12597@naver.com</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="pagefoot">
+      <span class="pl">Visit Now</span>
+      <span>—</span>
+      <span class="pr">07 / 07</span>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  const params = new URLSearchParams(location.search);
+  if(params.get('capture') !== '1') return;
+  document.querySelectorAll('.guide').forEach(el => el.style.display = 'none');
+  document.querySelectorAll('.slide-no').forEach(el => el.style.display = 'none');
+  document.body.style.padding = '0';
+  document.body.style.margin = '0';
+  document.body.style.background = 'transparent';
+  document.querySelectorAll('.slide-wrap').forEach(el => {
+    el.style.margin = '0';
+    el.style.maxWidth = 'none';
+    el.style.boxShadow = 'none';
+  });
+  const n = parseInt(params.get('slide') || '1', 10);
+  const wraps = document.querySelectorAll('.slide-wrap');
+  wraps.forEach((el, i) => { el.style.display = (i + 1) === n ? 'block' : 'none'; });
+})();
+</script>
+</body>
+</html>

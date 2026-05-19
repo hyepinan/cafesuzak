@@ -272,7 +272,7 @@ add_text_runs(s, Inches(0.6), Inches(1.5), Inches(11), Inches(1.5),
               line_spacing=1.2)
 
 add_text(s, Inches(0.6), Inches(3.4), Inches(7.5), Inches(1.2),
-         "세종 조치원의 작은 골목, 원마루길 28-1.\n10년 경력 마스터가 매일 매장에서 직접 원두를 볶고,\n시럽·소스·디저트까지 100% 손으로 만드는 로스터리 카페입니다.",
+         "세종 조치원의 작은 골목, 원마루길 28-1.\n2012년부터 — 15년차 마스터가 매일 매장에서 직접 원두를 볶고,\n시럽·소스·디저트까지 100% 손으로 만드는 로스터리 카페입니다.",
          size=13, color=INK_2, line_spacing=1.7)
 
 # Three core values - boxes
@@ -292,7 +292,7 @@ value_box(s, bx,            by, bw, bh, "HANDMADE",
           "100% 수작업의 철학",
           "생두 직접 구매 · 매장 로스팅 · 시럽/소스 수제 · 파스타/리조또까지")
 value_box(s, bx+Inches(4.1), by, bw, bh, "MASTERY",
-          "10년 경력 마스터",
+          "15년차 마스터 (2012~)",
           "본질에 집착하는 결과물 · 단순 카페가 아닌 완성도 높은 커피 경험")
 value_box(s, bx+Inches(8.2), by, bw, bh, "EXPERIENCE",
           "낮엔 카페, 밤엔 바",
@@ -339,7 +339,7 @@ add_text(s, RX+Inches(0.4), Inches(4.4), COLW-Inches(0.6), Inches(0.3),
 add_text(s, RX+Inches(0.4), Inches(4.7), COLW-Inches(0.6), Inches(0.4),
          "본질적 경쟁력", size=18, color=WHITE, bold=True)
 add_text(s, RX+Inches(0.4), Inches(5.25), COLW-Inches(0.6), Inches(1.6),
-         "·  약 10년의 탄탄한 업력\n·  세종시 최고 수준이라 자부하는 직접 로스팅 커피\n·  제빵 자격증 · 파스타/소스까지 직접 만드는 요리 역량",
+         "·  2012년부터 — 15년차 탄탄한 업력\n·  세종시 최고 수준이라 자부하는 직접 로스팅 커피\n·  제빵 자격증 · 파스타/소스까지 직접 만드는 요리 역량",
          size=12, color=WHITE, line_spacing=1.85, font=F_SANS)
 
 page_footer(s, "THE PARADOX")

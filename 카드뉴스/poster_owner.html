@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Cafe Suzak — Owner Poster (1080×1920)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..900,0..100,0..1&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  @font-face{font-family:'Gmarket Sans';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');font-weight:300;font-display:swap}
+  @font-face{font-family:'Gmarket Sans';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');font-weight:500;font-display:swap}
+  @font-face{font-family:'Gmarket Sans';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');font-weight:700;font-display:swap}
+
+  :root{
+    --bg:#FAFAF7;--ink:#0a0a0a;--ink-2:#3a3a3a;--ink-3:#888888;
+    --line:#1a1a1a;--line-soft:#dcdcd6;--rose:#C8344F;
+    --serif:"Fraunces",ui-serif,Georgia,serif;
+    --sans:"Gmarket Sans","Pretendard",sans-serif;
+    --mono:"DM Mono",monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:#1a1a1a;font-family:var(--sans);font-weight:300;padding:60px 40px;-webkit-font-smoothing:antialiased;word-break:keep-all;overflow-wrap:break-word}
+  h1,h2,h3,p,span,div,b,em{word-break:keep-all;overflow-wrap:break-word}
+
+  .guide{max-width:1080px;margin:0 auto 50px;background:#2a2a2a;color:#eee;padding:28px 40px;border:1px solid #444;border-radius:8px}
+  .guide h2{font-family:var(--serif);font-weight:400;font-size:26px;margin-bottom:12px;color:#fff}
+  .guide p{font-family:var(--sans);font-size:14px;line-height:1.7;color:#bbb;margin-bottom:8px}
+  .guide ol{padding-left:22px;font-family:var(--sans);font-size:14px;line-height:1.9;color:#ddd}
+  .guide b{color:#fff;font-weight:500}
+  .guide code{background:#444;padding:2px 8px;border-radius:3px;font-family:var(--mono);font-size:13px;color:#eee}
+
+  .poster-wrap{max-width:1080px;margin:0 auto;box-shadow:0 24px 80px rgba(0,0,0,.5)}
+  .poster-no{background:#2a2a2a;color:#eee;padding:14px 28px;font-family:var(--mono);font-size:13px;letter-spacing:.24em;text-transform:uppercase;display:flex;justify-content:space-between;align-items:center}
+  .poster-no b{color:#fff;font-weight:500}
+  .poster-no .save-hint{color:#777;font-size:11px}
+
+  .poster{width:1080px;height:1920px;background:var(--bg);position:relative;overflow:hidden;color:var(--ink);display:flex;flex-direction:column}
+
+  .p-masthead{border-bottom:1px solid var(--line);padding:36px 60px;display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:13px;letter-spacing:.32em;text-transform:uppercase;font-weight:500;color:var(--ink)}
+  .p-masthead .left{display:flex;gap:36px;align-items:center}
+  .p-masthead .dot{display:inline-block;width:6px;height:6px;background:var(--rose);border-radius:50%;margin:0 14px;vertical-align:middle}
+  .p-masthead .right{color:var(--ink-3);letter-spacing:.32em}
+
+  /* Hero */
+  .p-hero{padding:60px 60px 50px;border-bottom:1px solid var(--line);position:relative}
+  .p-hero-meta{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:24px;font-family:var(--mono);font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--ink-3);font-weight:500}
+  .p-hero-meta .feature{color:var(--rose);font-weight:700}
+  .p-hero-title{font-family:var(--serif);font-weight:700;font-size:180px;line-height:.9;letter-spacing:-.05em;color:var(--ink);margin:0;font-variation-settings:"SOFT" 0,"WONK" 0,"opsz" 144}
+  .p-hero-title em{font-style:italic;font-weight:400;color:var(--rose);font-variation-settings:"SOFT" 100,"WONK" 1,"opsz" 144}
+  .p-hero-sub{margin-top:30px;font-family:var(--serif);font-weight:400;font-size:38px;line-height:1.2;letter-spacing:-.02em;color:var(--ink)}
+  .p-hero-sub em{font-style:italic;color:var(--rose);font-variation-settings:"SOFT" 100,"WONK" 1,"opsz" 144}
+  .p-hero-lead{margin-top:24px;max-width:600px;font-family:var(--sans);font-size:16px;line-height:1.7;color:var(--ink-2);font-weight:400}
+
+  /* Program info */
+  .p-program-strip{display:flex;justify-content:space-between;align-items:center;padding:18px 60px;border-bottom:1px solid var(--line);font-family:var(--mono);font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--ink-2);font-weight:500;background:var(--ink);color:var(--bg)}
+  .p-program-strip .label{color:#999}
+  .p-program-strip .val{color:#fff;font-weight:700}
+
+  /* Page features (4-cell grid) */
+  .p-features{display:grid;grid-template-columns:80px 1fr;border-bottom:1px solid var(--line)}
+  .p-feature-row{display:contents}
+  .p-feature-num{grid-column:1;padding:30px 0;text-align:center;font-family:var(--serif);font-weight:700;font-size:44px;letter-spacing:-.03em;color:var(--rose);line-height:1;border-right:1px solid var(--line);border-bottom:1px solid var(--line-soft);display:flex;align-items:flex-start;justify-content:center;padding-top:38px;font-variation-settings:"SOFT" 100,"WONK" 1,"opsz" 144}
+  .p-feature-num.last{border-bottom:none}
+  .p-feature-body{grid-column:2;padding:28px 50px;border-bottom:1px solid var(--line-soft);display:grid;grid-template-columns:1fr 200px;gap:30px;align-items:flex-start}
+  .p-feature-body.last{border-bottom:none}
+  .p-feature-tag{font-family:var(--mono);font-size:10px;letter-spacing:.32em;text-transform:uppercase;color:var(--ink-3);font-weight:500;margin-bottom:10px}
+  .p-feature-title{font-family:var(--serif);font-weight:400;font-size:34px;line-height:1.1;letter-spacing:-.02em;color:var(--ink);margin-bottom:10px}
+  .p-feature-title em{font-style:italic;color:var(--rose);font-variation-settings:"SOFT" 100,"WONK" 1,"opsz" 144}
+  .p-feature-desc{font-family:var(--sans);font-size:14px;line-height:1.7;color:var(--ink-2);font-weight:400}
+  .p-feature-side{text-align:left;border-left:1px dashed var(--line-soft);padding-left:22px}
+  .p-feature-side-label{font-family:var(--mono);font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--ink-3);font-weight:500;margin-bottom:6px}
+  .p-feature-side-val{font-family:var(--serif);font-style:italic;font-size:18px;line-height:1.4;color:var(--ink);font-weight:400;font-variation-settings:"SOFT" 100,"WONK" 1,"opsz" 144}
+
+  /* Pullout quote */
+  .p-pullout{padding:60px 60px;text-align:center;border-bottom:1px solid var(--line);background:var(--bg)}
+  .p-pullout-mark{font-family:var(--serif);font-weight:700;font-size:140px;line-height:.4;color:var(--rose);margin-bottom:0;font-variation-settings:"SOFT" 100,"WONK" 1,"opsz" 144}
+  .p-pullout-text{font-family:var(--serif);font-style:italic;font-weight:400;font-size:50px;line-height:1.2;letter-spacing:-.02em;color:var(--ink);margin:20px auto 0;max-width:860px;font-variation-settings:"SOFT" 100,"WONK" 1,"opsz" 144}
+  .p-pullout-text em{color:var(--rose);font-style:italic}
+  .p-pullout-cite{margin-top:22px;font-family:var(--mono);font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:var(--ink-3);font-weight:500}
+
+  /* URL block */
+  .p-url-block{background:var(--ink);color:var(--bg);padding:42px 56px;border-bottom:1px solid var(--line)}
+  .p-url-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
+  .p-url-tag{font-family:var(--mono);font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:var(--rose);font-weight:700}
+  .p-url-arrow{font-family:var(--serif);font-weight:300;font-size:48px;line-height:1;color:var(--rose)}
+  .p-url-line{font-family:var(--serif);font-weight:500;font-size:42px;letter-spacing:-.02em;color:var(--bg);line-height:1.1}
+  .p-url-line em{font-style:italic;font-weight:400;color:var(--rose);font-variation-settings:"SOFT" 100,"WONK" 1,"opsz" 144}
+
+  /* Footer */
+  .p-footer{flex:1;display:flex;flex-direction:column;justify-content:space-between;padding:30px 60px 30px}
+  .p-footer-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:28px;padding-bottom:22px;border-bottom:1px solid var(--line)}
+  .p-foot-col{display:flex;flex-direction:column;gap:5px}
+  .p-foot-label{font-family:var(--mono);font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--ink-3);font-weight:500}
+  .p-foot-val{font-family:var(--sans);font-size:14px;line-height:1.55;color:var(--ink);font-weight:500}
+  .p-foot-val a{color:var(--rose);text-decoration:none;font-weight:500}
+  .p-bottom-bar{display:flex;justify-content:space-between;align-items:center;padding-top:16px;font-family:var(--mono);font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--ink-3);font-weight:500}
+  .p-bottom-bar .left{color:var(--ink);font-weight:700}
+</style>
+</head>
+<body>
+
+<div class="guide">
+  <h2>📸 사장님용 포스터 · 캡쳐 가이드</h2>
+  <p>크기 <b>1080×1920</b>. 매칭/소개팅 내용 X — 비교과 프로그램 + 카페 소개 + 페이지 안내 + 후기 추첨.</p>
+  <ol>
+    <li>크롬에서 F12 → 포스터 위 <b>우클릭 → "Inspect"</b></li>
+    <li><code>.poster</code> 요소 <b>우클릭 → "Capture node screenshot"</b></li>
+  </ol>
+</div>
+
+<div class="poster-wrap">
+  <div class="poster-no"><b>POSTER · OWNER · 1080×1920</b><span class="save-hint">→ 우클릭 후 "Capture node screenshot"</span></div>
+  <div class="poster">
+
+    <div class="p-masthead">
+      <div class="left">
+        <span>Cafe Suzak<span class="dot"></span>Page</span>
+      </div>
+      <div class="right">2026 · 학생 프로젝트</div>
+    </div>
+
+    <div class="p-hero">
+      <div class="p-hero-meta">
+        <span class="feature">— Cover Feature</span>
+        <span>홈페이지 안내</span>
+      </div>
+      <h1 class="p-hero-title">P<em>a</em>ge.</h1>
+      <p class="p-hero-sub">학생이 만든,<br/><em>우리 카페</em> 페이지.</p>
+      <p class="p-hero-lead">고려대학교 세종캠퍼스 글로벌경영학과 학생이 비교과 프로그램으로 직접 제작한 카페수작 홈페이지. 메뉴 추천, 영업 상태, 사용자 후기까지.</p>
+    </div>
+
+    <div class="p-program-strip">
+      <span><span class="label">Program · </span><span class="val">지역 영세기업 AI 콘텐츠 마케팅 산학협력</span></span>
+      <span><span class="label">By · </span><span class="val">글로벌경영 비교과</span></span>
+    </div>
+
+    <div class="p-features">
+      <div class="p-feature-row">
+        <div class="p-feature-num">01</div>
+        <div class="p-feature-body">
+          <div>
+            <div class="p-feature-tag">— Recommend</div>
+            <h3 class="p-feature-title"><em>기분 · 날씨</em><br/>맞춤 메뉴.</h3>
+            <p class="p-feature-desc">조치원 실시간 날씨 + 10가지 기분 → 카페수작 메뉴 3잔 자동 추천.</p>
+          </div>
+          <div class="p-feature-side">
+            <div class="p-feature-side-label">Method</div>
+            <div class="p-feature-side-val">Real-time<br/>Weather +<br/>Mood Match</div>
+          </div>
+        </div>
+      </div>
+      <div class="p-feature-row">
+        <div class="p-feature-num last">02</div>
+        <div class="p-feature-body last">
+          <div>
+            <div class="p-feature-tag">— Status & Voice</div>
+            <h3 class="p-feature-title"><em>실시간 영업</em><br/>+ 후기 추첨.</h3>
+            <p class="p-feature-desc">한국시간 기준 영업 상태 자동 표시 · 한 줄 후기 작성 시 음료 1잔 추첨.</p>
+          </div>
+          <div class="p-feature-side">
+            <div class="p-feature-side-label">Method</div>
+            <div class="p-feature-side-val">Live Hours<br/>+ Lucky<br/>Draw</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="p-pullout">
+      <div class="p-pullout-mark">"</div>
+      <p class="p-pullout-text">오프라인의 <em>정성</em>을,<br/>온라인으로 <em>옮기는 일</em>.</p>
+      <div class="p-pullout-cite">— 글로벌경영 비교과 프로그램</div>
+    </div>
+
+    <div class="p-url-block">
+      <div class="p-url-head">
+        <div class="p-url-tag">— Visit Now</div>
+        <div class="p-url-arrow">→</div>
+      </div>
+      <div class="p-url-line">meet-at-suzak.vercel.app<em>/cafe</em></div>
+    </div>
+
+    <div class="p-footer">
+      <div class="p-footer-grid">
+        <div class="p-foot-col">
+          <div class="p-foot-label">— Instagram</div>
+          <div class="p-foot-val">@cafe_suzak</div>
+        </div>
+        <div class="p-foot-col">
+          <div class="p-foot-label">— Address</div>
+          <div class="p-foot-val">세종 조치원읍<br/>원마루길 28-1</div>
+        </div>
+        <div class="p-foot-col">
+          <div class="p-foot-label">— Contact</div>
+          <div class="p-foot-val"><a href="mailto:bin12597@naver.com">bin12597@naver.com</a></div>
+        </div>
+      </div>
+      <div class="p-bottom-bar">
+        <span class="left">Cafe Suzak · Page Project</span>
+        <span>고려대학교 세종캠 · 글로벌경영학과 비교과</span>
+        <span>Page 01</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+(function(){
+  const params = new URLSearchParams(location.search);
+  if(params.get('capture') !== '1') return;
+  document.querySelectorAll('.guide').forEach(el => el.style.display = 'none');
+  document.querySelectorAll('.poster-no').forEach(el => el.style.display = 'none');
+  document.body.style.padding = '0';
+  document.body.style.margin = '0';
+  document.body.style.background = 'transparent';
+  document.querySelectorAll('.poster-wrap').forEach(el => {
+    el.style.margin = '0';
+    el.style.maxWidth = 'none';
+    el.style.boxShadow = 'none';
+  });
+})();
+</script>
+</body>
+</html>
