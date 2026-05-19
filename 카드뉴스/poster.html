@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Cafe Suzak — Editorial Poster (1080×1920)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..900,0..100,0..1&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  @font-face{font-family:'Gmarket Sans';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');font-weight:300;font-display:swap}
+  @font-face{font-family:'Gmarket Sans';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');font-weight:500;font-display:swap}
+  @font-face{font-family:'Gmarket Sans';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');font-weight:700;font-display:swap}
+
+  :root{
+    --bg:#FAFAF7;
+    --ink:#0a0a0a;
+    --ink-2:#3a3a3a;
+    --ink-3:#888888;
+    --line:#1a1a1a;
+    --line-soft:#dcdcd6;
+    --rose:#C8344F;
+    --serif:"Fraunces",ui-serif,Georgia,serif;
+    --sans:"Gmarket Sans","Pretendard","Apple SD Gothic Neo",sans-serif;
+    --mono:"DM Mono",monospace;
+  }
+
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:#1a1a1a;font-family:var(--sans);font-weight:300;
+    padding:60px 40px;-webkit-font-smoothing:antialiased;
+    word-break:keep-all;overflow-wrap:break-word;
+  }
+  h1,h2,h3,p,span,div,b,em{word-break:keep-all;overflow-wrap:break-word}
+
+  /* 가이드 */
+  .guide{
+    max-width:1080px;margin:0 auto 50px;
+    background:#2a2a2a;color:#eee;padding:28px 40px;border:1px solid #444;border-radius:8px;
+  }
+  .guide h2{font-family:var(--serif);font-weight:400;font-size:26px;margin-bottom:12px;color:#fff}
+  .guide p{font-family:var(--sans);font-size:14px;line-height:1.7;color:#bbb;margin-bottom:8px}
+  .guide ol{padding-left:22px;font-family:var(--sans);font-size:14px;line-height:1.9;color:#ddd}
+  .guide b{color:#fff;font-weight:500}
+  .guide code{background:#444;padding:2px 8px;border-radius:3px;font-family:var(--mono);font-size:13px;color:#eee}
+
+  .poster-wrap{
+    max-width:1080px;margin:0 auto;
+    box-shadow:0 24px 80px rgba(0,0,0,.5);
+  }
+  .poster-no{
+    background:#2a2a2a;color:#eee;padding:14px 28px;
+    font-family:var(--mono);font-size:13px;letter-spacing:.24em;text-transform:uppercase;
+    display:flex;justify-content:space-between;align-items:center;
+  }
+  .poster-no b{color:#fff;font-weight:500}
+  .poster-no .save-hint{color:#777;font-size:11px}
+
+  /* ===== POSTER ===== */
+  .poster{
+    width:1080px;height:1920px;
+    background:var(--bg);position:relative;overflow:hidden;color:var(--ink);
+    display:flex;flex-direction:column;
+  }
+
+  /* Masthead */
+  .p-masthead{
+    border-bottom:1px solid var(--line);padding:36px 60px;
+    display:flex;justify-content:space-between;align-items:center;
+    font-family:var(--mono);font-size:13px;letter-spacing:.32em;text-transform:uppercase;font-weight:500;
+    color:var(--ink);
+  }
+  .p-masthead .left{display:flex;gap:36px;align-items:center}
+  .p-masthead .dot{display:inline-block;width:6px;height:6px;background:var(--rose);border-radius:50%;margin:0 14px;vertical-align:middle}
+  .p-masthead .right{color:var(--ink-3);letter-spacing:.32em}
+
+  /* Hero block */
+  .p-hero{
+    padding:80px 60px 60px;border-bottom:1px solid var(--line);
+    position:relative;
+  }
+  .p-hero-meta{
+    display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:24px;
+    font-family:var(--mono);font-size:12px;letter-spacing:.3em;text-transform:uppercase;
+    color:var(--ink-3);font-weight:500;
+  }
+  .p-hero-meta .feature{color:var(--rose);font-weight:700}
+  .p-hero-title{
+    font-family:var(--serif);font-weight:700;font-size:300px;line-height:.85;letter-spacing:-.055em;
+    color:var(--ink);margin:0;
+    font-variation-settings:"SOFT" 0,"WONK" 0,"opsz" 144;
+  }
+  .p-hero-title em{
+    font-style:italic;font-weight:400;color:var(--rose);
+    font-variation-settings:"SOFT" 100,"WONK" 1,"opsz" 144;
+  }
+  .p-hero-sub{
+    margin-top:32px;
+    font-family:var(--serif);font-weight:400;font-size:46px;line-height:1.15;letter-spacing:-.02em;color:var(--ink);
+  }
+  .p-hero-sub em{
+    font-style:italic;color:var(--rose);font-variation-settings:"SOFT" 100,"WONK" 1,"opsz" 144;
+  }
+  .p-hero-lead{
+    margin-top:24px;max-width:580px;
+    font-family:var(--sans);font-size:16px;line-height:1.7;color:var(--ink-2);font-weight:400;
+  }
+
+  /* Issue & dateline */
+  .p-issue-strip{
+    display:flex;justify-content:space-between;align-items:center;
+    padding:18px 60px;border-bottom:1px solid var(--line);
+    font-family:var(--mono);font-size:11px;letter-spacing:.32em;text-transform:uppercase;
+    color:var(--ink-2);font-weight:500;background:var(--ink);color:var(--bg);
+  }
+  .p-issue-strip .label{color:#999}
+  .p-issue-strip .val{color:#fff;font-weight:700}
+
+  /* Two-feature spread */
+  .p-features{
+    display:grid;grid-template-columns:80px 1fr;
+    border-bottom:1px solid var(--line);
+  }
+  .p-feature-row{
+    display:contents;
+  }
+  .p-feature-num{
+    grid-column:1;
+    padding:40px 0;text-align:center;
+    font-family:var(--serif);font-weight:700;font-size:48px;letter-spacing:-.03em;
+    color:var(--rose);line-height:1;
+    border-right:1px solid var(--line);border-bottom:1px solid var(--line-soft);
+    display:flex;align-items:flex-start;justify-content:center;padding-top:48px;
+    font-variation-settings:"SOFT" 100,"WONK" 1,"opsz" 144;
+  }
+  .p-feature-num.last{border-bottom:none}
+  .p-feature-body{
+    grid-column:2;
+    padding:40px 60px;border-bottom:1px solid var(--line-soft);
+    display:grid;grid-template-columns:1fr 220px;gap:36px;align-items:flex-start;
+  }
+  .p-feature-body.last{border-bottom:none}
+  .p-feature-tag{
+    font-family:var(--mono);font-size:11px;letter-spacing:.32em;text-transform:uppercase;
+    color:var(--ink-3);font-weight:500;margin-bottom:14px;
+  }
+  .p-feature-title{
+    font-family:var(--serif);font-weight:400;font-size:54px;line-height:1.05;letter-spacing:-.025em;
+    color:var(--ink);margin-bottom:16px;
+  }
+  .p-feature-title em{
+    font-style:italic;color:var(--rose);font-variation-settings:"SOFT" 100,"WONK" 1,"opsz" 144;
+  }
+  .p-feature-desc{
+    font-family:var(--sans);font-size:15px;line-height:1.75;color:var(--ink-2);font-weight:400;
+  }
+  .p-feature-side{
+    text-align:left;
+    border-left:1px dashed var(--line-soft);padding-left:24px;
+  }
+  .p-feature-side-label{
+    font-family:var(--mono);font-size:10px;letter-spacing:.28em;text-transform:uppercase;
+    color:var(--ink-3);font-weight:500;margin-bottom:8px;
+  }
+  .p-feature-side-val{
+    font-family:var(--serif);font-style:italic;font-size:22px;line-height:1.4;color:var(--ink);font-weight:400;
+    font-variation-settings:"SOFT" 100,"WONK" 1,"opsz" 144;
+  }
+
+  /* Pullout quote */
+  .p-pullout{
+    padding:80px 60px;text-align:center;border-bottom:1px solid var(--line);
+    position:relative;background:var(--bg);
+  }
+  .p-pullout-mark{
+    font-family:var(--serif);font-weight:700;font-size:160px;line-height:.4;
+    color:var(--rose);margin-bottom:0;
+    font-variation-settings:"SOFT" 100,"WONK" 1,"opsz" 144;
+  }
+  .p-pullout-text{
+    font-family:var(--serif);font-style:italic;font-weight:400;font-size:60px;line-height:1.15;
+    letter-spacing:-.02em;color:var(--ink);margin:24px auto 0;max-width:880px;
+    font-variation-settings:"SOFT" 100,"WONK" 1,"opsz" 144;
+  }
+  .p-pullout-text em{color:var(--rose);font-style:italic}
+  .p-pullout-cite{
+    margin-top:28px;
+    font-family:var(--mono);font-size:12px;letter-spacing:.32em;text-transform:uppercase;
+    color:var(--ink-3);font-weight:500;
+  }
+
+  /* URL block (large) — vertical stack */
+  .p-url-block{
+    background:var(--ink);color:var(--bg);padding:42px 56px;
+    border-bottom:1px solid var(--line);
+  }
+  .p-url-head{
+    display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;
+  }
+  .p-url-tag{
+    font-family:var(--mono);font-size:12px;letter-spacing:.32em;text-transform:uppercase;
+    color:var(--rose);font-weight:700;
+  }
+  .p-url-arrow{
+    font-family:var(--serif);font-weight:300;font-size:48px;line-height:1;color:var(--rose);
+  }
+  .p-url-line{
+    font-family:var(--serif);font-weight:500;font-size:44px;letter-spacing:-.02em;
+    color:var(--bg);line-height:1.1;
+  }
+  .p-url-line em{
+    font-style:italic;font-weight:400;color:var(--rose);
+    font-variation-settings:"SOFT" 100,"WONK" 1,"opsz" 144;
+  }
+
+  /* Footer */
+  .p-footer{
+    flex:1;display:flex;flex-direction:column;justify-content:space-between;
+    padding:36px 60px 32px;
+  }
+  .p-footer-grid{
+    display:grid;grid-template-columns:1fr 1fr 1fr;gap:30px;
+    padding-bottom:24px;border-bottom:1px solid var(--line);
+  }
+  .p-foot-col{display:flex;flex-direction:column;gap:6px}
+  .p-foot-label{
+    font-family:var(--mono);font-size:10px;letter-spacing:.28em;text-transform:uppercase;
+    color:var(--ink-3);font-weight:500;
+  }
+  .p-foot-val{
+    font-family:var(--sans);font-size:14px;line-height:1.55;color:var(--ink);font-weight:500;
+  }
+  .p-foot-val a{color:var(--rose);text-decoration:none;font-weight:500}
+
+  .p-bottom-bar{
+    display:flex;justify-content:space-between;align-items:center;padding-top:18px;
+    font-family:var(--mono);font-size:11px;letter-spacing:.3em;text-transform:uppercase;
+    color:var(--ink-3);font-weight:500;
+  }
+  .p-bottom-bar .left{color:var(--ink);font-weight:700}
+</style>
+</head>
+<body>
+
+<div class="guide">
+  <h2>📸 Editorial Poster · 캡쳐 가이드</h2>
+  <p>크기: <b>1080×1920</b> (인스타 스토리·세로 인쇄용)</p>
+  <ol>
+    <li>크롬에서 F12 → 포스터 위 <b>우클릭 → "Inspect"</b></li>
+    <li><code>.poster</code> 요소 위 <b>우클릭 → "Capture node screenshot"</b></li>
+    <li>고해상도 PNG가 다운로드 폴더에 자동 저장</li>
+  </ol>
+</div>
+
+<div class="poster-wrap">
+  <div class="poster-no"><b>POSTER · EDITORIAL · 1080×1920</b> <span class="save-hint">→ 우클릭 후 "Capture node screenshot"</span></div>
+
+  <div class="poster">
+
+    <!-- ===== Masthead ===== -->
+    <div class="p-masthead">
+      <div class="left">
+        <span>Cafe Suzak<span class="dot"></span>Match</span>
+      </div>
+      <div class="right">Issue №01 · MMXXVI</div>
+    </div>
+
+    <!-- ===== Hero ===== -->
+    <div class="p-hero">
+      <div class="p-hero-meta">
+        <span class="feature">— Cover Feature</span>
+        <span>매칭 시스템 안내</span>
+      </div>
+      <h1 class="p-hero-title">M<em>a</em>tch.</h1>
+      <p class="p-hero-sub">수작에서 시작하는<br/><em>인연.</em></p>
+      <p class="p-hero-lead">
+        카페수작 방문자 전용 매칭 시스템. 익명으로 인스타팅·소개팅을 신청하거나, 카페에서 마주친 누군가에게 수작부리기 게시판으로 한 마디를 남길 수 있어요.
+      </p>
+    </div>
+
+    <!-- ===== Issue strip ===== -->
+    <div class="p-issue-strip">
+      <span><span class="label">Section · </span><span class="val">What's Inside</span></span>
+      <span><span class="label">Pages · </span><span class="val">01 / 02</span></span>
+    </div>
+
+    <!-- ===== Features ===== -->
+    <div class="p-features">
+
+      <div class="p-feature-row">
+        <div class="p-feature-num">01</div>
+        <div class="p-feature-body">
+          <div>
+            <div class="p-feature-tag">— Apply</div>
+            <h3 class="p-feature-title"><em>인스타팅</em><br/>소개팅 신청.</h3>
+            <p class="p-feature-desc">
+              익명으로 신청서를 제출하면 운영자가 매칭. 매칭 성사 시 인스타로 직접 연결됩니다. 이름·연락처·결제시각은 운영자만 열람.
+            </p>
+          </div>
+          <div class="p-feature-side">
+            <div class="p-feature-side-label">Method</div>
+            <div class="p-feature-side-val">Anonymous<br/>Application →<br/>Manual Match</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-feature-row">
+        <div class="p-feature-num last">02</div>
+        <div class="p-feature-body last">
+          <div>
+            <div class="p-feature-tag">— Board</div>
+            <h3 class="p-feature-title"><em>수작부리기</em><br/>게시판.</h3>
+            <p class="p-feature-desc">
+              카페에서 마음에 든 사람을 봤다면 포스트잇으로 한 마디. 답장이 오면 약속한 시간에 카페수작에서. 만나면 운명, 못 만나면 한 잔 더.
+            </p>
+          </div>
+          <div class="p-feature-side">
+            <div class="p-feature-side-label">Method</div>
+            <div class="p-feature-side-val">Post-it Board<br/>+ Reply with<br/>Date & Time</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== Pullout Quote ===== -->
+    <div class="p-pullout">
+      <div class="p-pullout-mark">"</div>
+      <p class="p-pullout-text">수작은 <em>거는 거</em>예요.<br/>인연은 <em>받는 거</em>고요.</p>
+      <div class="p-pullout-cite">— Cafe Suzak Match</div>
+    </div>
+
+    <!-- ===== URL Block ===== -->
+    <div class="p-url-block">
+      <div class="p-url-head">
+        <div class="p-url-tag">— Visit Now</div>
+        <div class="p-url-arrow">→</div>
+      </div>
+      <div class="p-url-line">meet-at-suzak.vercel.app<em>/match</em></div>
+    </div>
+
+    <!-- ===== Footer ===== -->
+    <div class="p-footer">
+      <div class="p-footer-grid">
+        <div class="p-foot-col">
+          <div class="p-foot-label">— Instagram</div>
+          <div class="p-foot-val">@cafe_suzak</div>
+        </div>
+        <div class="p-foot-col">
+          <div class="p-foot-label">— Address</div>
+          <div class="p-foot-val">세종 조치원읍<br/>원마루길 28-1</div>
+        </div>
+        <div class="p-foot-col">
+          <div class="p-foot-label">— Contact</div>
+          <div class="p-foot-val"><a href="mailto:bin12597@naver.com">bin12597@naver.com</a></div>
+        </div>
+      </div>
+      <div class="p-bottom-bar">
+        <span class="left">Cafe Suzak · Match Issue №01</span>
+        <span>고려대학교 세종캠 · 글로벌경영학과 비교과</span>
+        <span>Page 01</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+/* Capture mode — ?capture=1 */
+(function(){
+  const params = new URLSearchParams(location.search);
+  if(params.get('capture') !== '1') return;
+  document.querySelectorAll('.guide').forEach(el => el.style.display = 'none');
+  document.querySelectorAll('.poster-no').forEach(el => el.style.display = 'none');
+  document.body.style.padding = '0';
+  document.body.style.margin = '0';
+  document.body.style.background = 'transparent';
+  document.querySelectorAll('.poster-wrap').forEach(el => {
+    el.style.margin = '0';
+    el.style.maxWidth = 'none';
+    el.style.boxShadow = 'none';
+  });
+})();
+</script>
+</body>
+</html>
